@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <link rel="stylesheet" href="qrcode.css">
+    
+    
+</head>
+
+<body>
+  
+    <header>
+ <a href="#"class="logo">Hussein Lafta</a>
+ 
+ <div class="menu-btn"></div>
+<div class="navigation">
+  <div class="navigation-items">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Explore</a>
+<a href="#">Contact</a>
+</div>
+</div>
+</header>
+<section class="home">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="grid-item">
+                <input type="text" id="text1" placeholder="أدخل النص هنا">
+                <input type="color" id="backgroundColor1" value="#e9ebee">
+                <input type="color" id="dotsColor1" value="#6a1a4c">
+                <input type="color" id="cornersSquareColor1" value="#"><br>
+                <select id="dotsType1">
+                    <option value="square">Square</option>
+                    <option value="dots">Dots</option>
+                    <option value="rounded">Rounded</option>
+                    <option value="extra-rounded">Extra rounded</option>
+                    <option value="classy">Classy</option>
+                    <option value="classy-rounded">Classy rounded</option>
+                </select><br>
+                        <!-- Add select element for corners square type here -->
+                                <select id="cornersSquareType1">
+                                    <option value="square">Square</option>
+                                    <option value="dot">Dot</option>
+                                    <option value="extra-rounded">Extra rounded</option>
+                                    <option value="rounded">Rounded</option>
+                                    <option value="leaf">Leaf</option>
+                                    <option value="sail">Sail</option>
+                                </select><br>
+
+
+                <button onclick="downloadQRCode(1)">save</button>
+                <div id="qr-code-container1"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="grid-item">
+                <input type="text" id="text2" placeholder="أدخل النص هنا"><br>
+                <button onclick="downloadQRCode(2)">save</button>
+                <div id="qr-code-container2"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="grid-item">
+                <input type="text" id="text3" placeholder="أدخل النص هنا"><br>
+                <button onclick="downloadQRCode(3)">save</button>
+                <div id="qr-code-container3"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="grid-item">
+                <input type="text" id="text4" placeholder="أدخل النص هنا"><br>
+                <button onclick="downloadQRCode(4)">save</button>
+                <div id="qr-code-container4"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="grid-item">
+                <input type="text" id="text5" placeholder="أدخل النص هنا"><br>
+                <button onclick="downloadQRCode(5)">save</button>
+                <div id="qr-code-container5"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="grid-item">
+                <input type="text" id="text6" placeholder="أدخل النص هنا"><br>
+                <button onclick="downloadQRCode(6)">save</button>
+                <div id="qr-code-container6"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    
+</div>
+<div class="media-icons">
+  <a href="رابط صفحتك على الفيسبوك" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="رابط حسابك على سنابجات" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+  <a href="رابط قناتك على اليوتيوب" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="رابط قناتك على التليغرام" target="_blank"><i class="fab fa-telegram"></i></a>
+</div>
+
+  
+  <div class="content">
+    <h1>qrCode. <br><span>Generat</span></h1>
+  <p>
+  هنا تسطيع انشاء الباركود وتتحكم بكل الخصائص 
+  رمز الاستجابة السريعة أو رمز الرد السريع أو الرمز المربّع (بالإنجليزية: Quick Response code أو QR code)‏ هو اسم العلامة التجارية لنظام مصفوفة الرموز الشريطية ثنائي الأبعاد (الباركود) وكان أول استخدام له في تصميم صناعة السيارات. وفي الآونة الأخيرة، أنتشر هذا النظام خارج نطاق الصناعة بسبب سهولة القراءة بشكل سريع ونسبة التخزين العالية. يتكون الرمز من وحدات سوداء مرتبة على شكل مربع على خلفية بيضاء. يمكن أن تكون المعلومات المشفرة أي نوع من البيانات (على سبيل المثال، الأعداد الثنائية، الأرقام، أو رموز كانجي). تم ابتكاره من قبل شركة دنسو ويف التابعة لشركة تويوتا وذلك في عام 1994م لتعقب قطع غيار المركبات أثناء عملية التصنيع، رمز الاستجابة السريع أحد أكثر أنواع الباركود الثنائية الأبعاد. وقد تم تصميمه لفك شفرته بسرعة عالية.
+
+  وقد كثر استخدام هذه التكنولوجيا في اليابان؛ وتعتبر المملكة المتحدة سابع أكبر مستهلك لرموز الاستجابة السريع
+  </p>
+  
+  <a href="#">Read More</a>
+  </div>
+
+</section>
+
+ <footer>
+  this website made with ❤️ by Hussein lafta
+ </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="qrcode.js"></script>
+
+</body>
+</html>
