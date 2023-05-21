@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 body {
 width: 100%;
-background-color: #6a1a4c;
+background-color: #000000;
 }
 header {
   z-index: 999;
@@ -79,7 +79,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #6a1a4c;
+  background: #38605a;
 }
 
 .swiper-container {
@@ -261,7 +261,33 @@ padding: 10px 10px;
 
 footer{
   font-size: 20px ;
+  font-style: normal;
   color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
+}
+#about{
+  color: #030000;
+  font-size: large;
+  font-weight: bold;
+  background-color: #c4c4c4;
+
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#explore{
+  background-color: #0c99e4;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bold;
+
+}
+video {
+  width: 100%;
+  height: auto;
+}
+#contact{
+  background-color: #ffffff;
 }
