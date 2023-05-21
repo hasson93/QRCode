@@ -19,15 +19,15 @@
 <body>
   
     <header>
- <a href="#"class="logo">Hussein Lafta</a>
+ <a href="#"class="logo">qrCode Generat</a>
  
  <div class="menu-btn"></div>
 <div class="navigation">
   <div class="navigation-items">
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Explore</a>
-<a href="#">Contact</a>
+<a href="#about">About</a> <!-- تحديث الرابط ليشير إلى قسم "About" -->
+<a href="#explore">Explore</a>
+<a href="#contact">Contact</a>
 </div>
 </div>
 </header>
@@ -36,6 +36,7 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="grid-item">
+              <h3 style="color: #38605a;">Here you can create a QR code in general </h3><br>
                 <input type="text" id="text1" placeholder="أدخل النص هنا">
                 <input type="color" id="backgroundColor1" value="#e9ebee">
                 <input type="color" id="dotsColor1" value="#6a1a4c">
@@ -65,6 +66,8 @@
         </div>
         <div class="swiper-slide">
             <div class="grid-item">
+              <h3 style="color: #38605a;"> Here you can create a QR code for Instagram </h3><br>
+
                 <input type="text" id="text2" placeholder="أدخل النص هنا"><br>
                 <button onclick="downloadQRCode(2)">save</button>
                 <div id="qr-code-container2"></div>
@@ -72,6 +75,8 @@
         </div>
         <div class="swiper-slide">
             <div class="grid-item">
+              <h3 style="color: #38605a;"> Here you can create a QR code for Facebook </h3><br>
+
                 <input type="text" id="text3" placeholder="أدخل النص هنا"><br>
                 <button onclick="downloadQRCode(3)">save</button>
                 <div id="qr-code-container3"></div>
@@ -79,6 +84,8 @@
         </div>
         <div class="swiper-slide">
             <div class="grid-item">
+              <h3 style="color: #38605a;"> Here you can create a QR code for Snapchat </h3><br>
+
                 <input type="text" id="text4" placeholder="أدخل النص هنا"><br>
                 <button onclick="downloadQRCode(4)">save</button>
                 <div id="qr-code-container4"></div>
@@ -86,6 +93,8 @@
         </div>
         <div class="swiper-slide">
             <div class="grid-item">
+              <h3 style="color: #38605a;"> Here you can create a QR code for Telegram </h3><br>
+
                 <input type="text" id="text5" placeholder="أدخل النص هنا"><br>
                 <button onclick="downloadQRCode(5)">save</button>
                 <div id="qr-code-container5"></div>
@@ -93,6 +102,8 @@
         </div>
         <div class="swiper-slide">
             <div class="grid-item">
+              <h3 style="color: #38605a;"> Here you can create a QR code for Whatsapp </h3><br>
+
                 <input type="text" id="text6" placeholder="أدخل النص هنا"><br>
                 <button onclick="downloadQRCode(6)">save</button>
                 <div id="qr-code-container6"></div>
@@ -125,9 +136,33 @@
   </div>
 
 </section>
+<!-- قسم "About" -->
+<section id="about">
+  <h1> < About This website ></></h1>
+  <p>هذا الموقع يقدم خدمة إنشاء رموز الاستجابة السريعة (QR codes) وتخصيصها بشكل مختلف.</p>
+  <p>يمكنك إدخال النص المطلوب وتحديد الألوان والتصميم المفضل للرمز.</p><br>
+  <img  src="code-styling.png" alt="">
+</section>
+<!-- قسم "Explore" -->
+<section id="explore">
+  <h1> < Reviwe my Program in python  ></></h1>
+  <h1>  اسنخدمت 13 مكتبة  لانشاء البرنامج </h1> 
+  <p>_________________________________________________________________</p>
+  <ul >PyQt5 - qrcode - pyzbar - PIL - random - pygame - 
+    arabic_reshaper - bidi.algorithm - numpy - cv2 - 
+    pytesserac</ul>
+    <p>_________________________________________________________________</p><br>
+    <h1>  فيديو استعراض للبرنامج </h1><br>
+<video src="show.mp4" controls></video>
+<img src="program1.png" alt="">
+<img src="program2.png" alt="">
+<img src="program3.png" alt="">
+
+</section>
+
 
  <footer>
-  this website made with ❤️ by Hussein lafta
+  This Website made with ❤️ by Hussein Lafta
  </footer>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
